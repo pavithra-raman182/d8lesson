@@ -1,0 +1,12 @@
+uuid: f037da80-75c3-4621-ab4e-73ac621a68eb
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: c4zaT5cyPxuTXI6JOWt3qRtMvICT9tHB6d9a5VG-CmQ
+id: feedback
+label: 'Website feedback'
+recipients:
+  - pavithra.raman+d8lesson@acquia.com
+reply: ''
+weight: 0
