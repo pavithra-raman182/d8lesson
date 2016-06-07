@@ -1,0 +1,32 @@
+uuid: 17366a0d-281f-4749-a869-d8d4e236c11c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.to_do_item_list
+  module:
+    - node
+    - views
+  theme:
+    - bartik
+id: views_block__to_do_item_list_block_1
+theme: bartik
+region: content
+weight: -8
+provider: null
+plugin: 'views_block:to_do_item_list-block_1'
+settings:
+  id: 'views_block:to_do_item_list-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      to_do_list: to_do_list
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
