@@ -1,0 +1,36 @@
+uuid: ff86b6fc-f509-48fc-bc13-de8ff0104b3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.to_do_item.body
+    - field.field.node.to_do_item.field_due_date
+    - node.type.to_do_item
+  module:
+    - datetime
+    - text
+    - user
+id: node.to_do_item.teaser
+targetEntityType: node
+bundle: to_do_item
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_due_date:
+    type: datetime_time_ago
+    weight: 2
+    label: above
+    settings:
+      future_format: '@interval hence'
+      past_format: '@interval ago'
+      granularity: 2
+    third_party_settings: {  }
+hidden:
+  links: true

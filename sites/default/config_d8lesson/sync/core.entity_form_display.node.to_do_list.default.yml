@@ -1,0 +1,44 @@
+uuid: ca98e68e-6031-4ea0-ac35-233ce039eb23
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.to_do_list.body
+    - field.field.node.to_do_list.field_to_do_item
+    - node.type.to_do_list
+  module:
+    - text
+id: node.to_do_list.default
+targetEntityType: node
+bundle: to_do_list
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 31
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  field_to_do_item:
+    weight: 32
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  title:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

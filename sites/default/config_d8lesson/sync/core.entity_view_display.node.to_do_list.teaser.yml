@@ -1,0 +1,26 @@
+uuid: 962edd2e-7972-4867-92a9-6e2137dba2e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.to_do_list.body
+    - node.type.to_do_list
+  module:
+    - text
+    - user
+id: node.to_do_list.teaser
+targetEntityType: node
+bundle: to_do_list
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

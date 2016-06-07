@@ -1,0 +1,33 @@
+uuid: 25892ea0-9c08-44b4-bbb8-7301d188da78
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.to_do_item.body
+    - field.field.node.to_do_item.field_due_date
+    - node.type.to_do_item
+  module:
+    - datetime
+    - text
+    - user
+id: node.to_do_item.default
+targetEntityType: node
+bundle: to_do_item
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_due_date:
+    weight: 1
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+hidden:
+  links: true

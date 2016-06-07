@@ -1,0 +1,32 @@
+uuid: d0afe46b-66b8-4589-a4fc-9350ba41756f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.to_do_list.body
+    - field.field.node.to_do_list.field_to_do_item
+    - node.type.to_do_list
+  module:
+    - text
+    - user
+id: node.to_do_list.default
+targetEntityType: node
+bundle: to_do_list
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_to_do_item:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 100
+hidden: {  }

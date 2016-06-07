@@ -1,0 +1,42 @@
+uuid: ff2e983e-9650-4a85-9b42-7465eefacb83
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.to_do_item.body
+    - field.field.node.to_do_item.field_due_date
+    - node.type.to_do_item
+  module:
+    - datetime
+    - text
+id: node.to_do_item.default
+targetEntityType: node
+bundle: to_do_item
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 31
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  field_due_date:
+    weight: 32
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+  title:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

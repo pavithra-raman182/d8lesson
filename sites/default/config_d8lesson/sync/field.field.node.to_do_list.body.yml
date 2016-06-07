@@ -1,0 +1,22 @@
+uuid: 8fcf950d-a67d-43af-977b-f9784f394316
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.to_do_list
+  module:
+    - text
+id: node.to_do_list.body
+field_name: body
+entity_type: node
+bundle: to_do_list
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
