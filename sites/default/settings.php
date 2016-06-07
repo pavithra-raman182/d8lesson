@@ -738,5 +738,6 @@ $databases['default']['default'] = array (
 $settings['install_profile'] = 'standard';
 $settings['trusted_host_patterns'] = array(
   '^d8lesson\.dd$',
+  '^d8lesson-prod\.dd$',
 );
 $config_directories['sync'] = 'sites/d8lesson.dd/config_d8lesson/sync';
